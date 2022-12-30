@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube
+  namespace: kube
+  labels:
+    app: kube
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kube
+  template:
+    metadata:
+      labels:
+        app: kube
+    spec:
+      containers:
+        - name: kube
+          image: kube:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000

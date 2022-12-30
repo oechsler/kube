@@ -1,0 +1,12 @@
+context: minikube
+name: kube
+dev:
+  kube:
+    image: golang:1.19-buster
+    command: bash
+    workdir: /code
+    sync:
+      - .:/code
+    volumes:
+      - /root/
+      - /go/
