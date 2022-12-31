@@ -13,7 +13,7 @@ First of all you need a Kubernetes cluster to which the service template can be 
 For local deployment and development [minikube](https://minikube.sigs.k8s.io/docs/) is the recommended choice.
 In addition to that an installation of the Make build-management-tool and the  [okteto](https://www.okteto.com/docs/getting-started/) toolchain is required.
 
-Once cloned, first build the production Docker image for the service.
+Once cloned, first build the production Docker image of the service.
 
 ```sh
 make build
